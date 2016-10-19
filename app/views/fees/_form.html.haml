@@ -1,0 +1,16 @@
+= form_for @fee do |f|
+  - if @fee.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@fee.errors.count, "error")} prohibited this fee from being saved:"
+      %ul
+        - @fee.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :fee_percentage
+    = f.text_field :fee_percentage
+  .actions
+    = f.submit 'Save'

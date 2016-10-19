@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :products
+  resources :subcategories
+  resources :categories
+  resources :users
+  resources :companies
+  resources :industries
+  resources :fees
+  resources :positions
+  get 'catalogues/index'
 end

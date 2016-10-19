@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: one
+  category: one
+  subcategory: one
+  name: MyString
+  description: MyString
+  weight_in_grams: 9.99
+  price: 9.99
+  available_quantity: 1
+  expiry_date: 2016-10-19 12:04:53
+  latitude: 1.5
+  longitude: 1.5
+  online_order_available: false
+  tax_amount: 1.5
+  image: MyString
+
+two:
+  company: two
+  category: two
+  subcategory: two
+  name: MyString
+  description: MyString
+  weight_in_grams: 9.99
+  price: 9.99
+  available_quantity: 1
+  expiry_date: 2016-10-19 12:04:53
+  latitude: 1.5
+  longitude: 1.5
+  online_order_available: false
+  tax_amount: 1.5
+  image: MyString

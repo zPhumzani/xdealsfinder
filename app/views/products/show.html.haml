@@ -1,0 +1,48 @@
+%p#notice= notice
+
+%p
+  %b Company:
+  = @product.company
+%p
+  %b Category:
+  = @product.category
+%p
+  %b Subcategory:
+  = @product.subcategory
+%p
+  %b Name:
+  = @product.name
+%p
+  %b Description:
+  = @product.description
+%p
+  %b Weight in grams:
+  = @product.weight_in_grams
+%p
+  %b Price:
+  = @product.price
+%p
+  %b Available quantity:
+  = @product.available_quantity
+%p
+  %b Expiry date:
+  = @product.expiry_date
+%p
+  %b Latitude:
+  = @product.latitude
+%p
+  %b Longitude:
+  = @product.longitude
+%p
+  %b Online order available:
+  = @product.online_order_available
+%p
+  %b Tax amount:
+  = @product.tax_amount
+%p
+  %b Image:
+  = @product.image
+
+= link_to 'Edit', edit_product_path(@product)
+\|
+= link_to 'Back', products_path

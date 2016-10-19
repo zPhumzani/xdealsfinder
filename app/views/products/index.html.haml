@@ -1,0 +1,47 @@
+%h1 Listing products
+
+%table
+  %thead
+    %tr
+      %th Company
+      %th Category
+      %th Subcategory
+      %th Name
+      %th Description
+      %th Weight in grams
+      %th Price
+      %th Available quantity
+      %th Expiry date
+      %th Latitude
+      %th Longitude
+      %th Online order available
+      %th Tax amount
+      %th Image
+      %th
+      %th
+      %th
+
+  %tbody
+    - @products.each do |product|
+      %tr
+        %td= product.company
+        %td= product.category
+        %td= product.subcategory
+        %td= product.name
+        %td= product.description
+        %td= product.weight_in_grams
+        %td= product.price
+        %td= product.available_quantity
+        %td= product.expiry_date
+        %td= product.latitude
+        %td= product.longitude
+        %td= product.online_order_available
+        %td= product.tax_amount
+        %td= product.image
+        %td= link_to 'Show', product
+        %td= link_to 'Edit', edit_product_path(product)
+        %td= link_to 'Destroy', product, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Product', new_product_path
