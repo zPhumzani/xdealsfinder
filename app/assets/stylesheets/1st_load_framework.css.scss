@@ -69,3 +69,44 @@ section {
     float: none;
   }
 }
+
+.footer-languages {
+  @extend .bg-success;
+  color: #212121;
+  padding: (1em * 2) 0;
+
+  ul {
+    margin-bottom: 0;
+
+    a {
+      color: #ffffff;
+
+      &:hover {
+        color: #212121;
+      }
+    }
+  }
+}
+
+.footer {
+  color: #b6b6b6;
+  margin: (1em * 2) 0;
+
+  a {
+    color: #b6b6b6;
+
+    &:hover {
+      color: #727272;
+    }
+  }
+}
+
+
+.social-media {
+  margin-top: (1em * 2);
+  padding-bottom: (1em * 1.5);
+
+  i {
+    font-size: (1em * 2);
+  }
+}

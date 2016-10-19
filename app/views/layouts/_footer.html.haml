@@ -1,0 +1,30 @@
+.card
+  = debug(params) if Rails.env.development?
+.footer-languages
+  .container
+    .row
+      .col-lg-12
+        %ul.list-inline
+          %li.list-inline-item
+            %strong Language
+          %li.list-inline-item= link_to 'About', '#'
+          %li.list-inline-item= link_to 'Contact Us', '#'
+          %li.list-inline-item= link_to 'Terms & Conditions', '#'
+          %li.list-inline-item= link_to 'Privacy', '#'
+          %li.list-inline-item= link_to 'Learn More', '#'
+          %li.list-inline-item
+            %span.text-danger Still working on this features
+
+
+.footer
+  .container
+    .row
+      .col-lg-12
+        %ul.list-inline
+          %li.list-inline-item= link_to 'RSS', '#'
+          %li.list-inline-item= link_to 'Terms & Conditions', '#'
+          %li.list-inline-item= link_to 'About', '#'
+          %li.list-inline-item= link_to 'Contact', '#'
+          %li.list-inline-item Copyright Major
+          %li.list-inline-item 
+            %mark.text-danger Still working on this features
