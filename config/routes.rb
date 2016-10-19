@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :contacts
   resources :regions
   resources :typ_contacts
@@ -12,5 +13,5 @@ Rails.application.routes.draw do
   resources :industries
   resources :fees
   resources :positions
-  get 'catalogues/index'
+  root 'catalogues#index'
 end

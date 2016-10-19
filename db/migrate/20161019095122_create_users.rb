@@ -5,8 +5,10 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.references :company, foreign_key: true
       t.string :first_name
       t.string :last_name
+      t.string :slug
 
       t.timestamps
     end
+    add_index :users, :slug
   end
 end
