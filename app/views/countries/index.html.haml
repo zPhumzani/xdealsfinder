@@ -1,0 +1,41 @@
+%h1 Listing countries
+
+%table
+  %thead
+    %tr
+      %th Iso
+      %th Iso3
+      %th Fips
+      %th Country
+      %th Continent
+      %th Currency code
+      %th Currency name
+      %th Phone prefix
+      %th Postal code
+      %th Language
+      %th Geonameid
+      %th
+      %th
+      %th
+
+  %tbody
+    - @countries.each do |country|
+      %tr
+        %td= country.iso
+        %td= country.iso3
+        %td= country.fips
+        %td= country.country
+        %td= country.continent
+        %td= country.currency_code
+        %td= country.currency_name
+        %td= country.phone_prefix
+        %td= country.postal_code
+        %td= country.language
+        %td= country.geonameid
+        %td= link_to 'Show', country
+        %td= link_to 'Edit', edit_country_path(country)
+        %td= link_to 'Destroy', country, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Country', new_country_path

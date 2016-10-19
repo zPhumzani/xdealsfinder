@@ -1,0 +1,43 @@
+= form_for @country do |f|
+  - if @country.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@country.errors.count, "error")} prohibited this country from being saved:"
+      %ul
+        - @country.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :iso
+    = f.text_field :iso
+  .field
+    = f.label :iso3
+    = f.text_field :iso3
+  .field
+    = f.label :fips
+    = f.text_field :fips
+  .field
+    = f.label :country
+    = f.text_field :country
+  .field
+    = f.label :continent
+    = f.text_field :continent
+  .field
+    = f.label :currency_code
+    = f.text_field :currency_code
+  .field
+    = f.label :currency_name
+    = f.text_field :currency_name
+  .field
+    = f.label :phone_prefix
+    = f.text_field :phone_prefix
+  .field
+    = f.label :postal_code
+    = f.text_field :postal_code
+  .field
+    = f.label :language
+    = f.text_field :language
+  .field
+    = f.label :geonameid
+    = f.text_field :geonameid
+  .actions
+    = f.submit 'Save'

@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :contacts
+  resources :regions
+  resources :typ_contacts
+  resources :orders
+  resources :countries
   resources :products
   resources :subcategories
   resources :categories

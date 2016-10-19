@@ -1,0 +1,21 @@
+%h1 Listing typ_contacts
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th
+      %th
+      %th
+
+  %tbody
+    - @typ_contacts.each do |typ_contact|
+      %tr
+        %td= typ_contact.name
+        %td= link_to 'Show', typ_contact
+        %td= link_to 'Edit', edit_typ_contact_path(typ_contact)
+        %td= link_to 'Destroy', typ_contact, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Typ contact', new_typ_contact_path

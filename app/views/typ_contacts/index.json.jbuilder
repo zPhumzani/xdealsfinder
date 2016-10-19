@@ -1,0 +1,1 @@
+json.array! @typ_contacts, partial: 'typ_contacts/typ_contact', as: :typ_contact

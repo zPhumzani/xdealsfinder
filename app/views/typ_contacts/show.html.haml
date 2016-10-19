@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @typ_contact.name
+
+= link_to 'Edit', edit_typ_contact_path(@typ_contact)
+\|
+= link_to 'Back', typ_contacts_path

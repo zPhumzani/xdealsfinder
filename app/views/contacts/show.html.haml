@@ -1,0 +1,51 @@
+%p#notice= notice
+
+%p
+  %b Address1:
+  = @contact.address1
+%p
+  %b Address1:
+  = @contact.address1
+%p
+  %b City:
+  = @contact.city
+%p
+  %b Postal code:
+  = @contact.postal_code
+%p
+  %b Email:
+  = @contact.email
+%p
+  %b Business number:
+  = @contact.business_number
+%p
+  %b Cell number:
+  = @contact.cell_number
+%p
+  %b Latitude:
+  = @contact.latitude
+%p
+  %b Longitude:
+  = @contact.longitude
+%p
+  %b Avatar:
+  = @contact.avatar
+%p
+  %b Typ contact:
+  = @contact.typ_contact
+%p
+  %b Country:
+  = @contact.country
+%p
+  %b Region:
+  = @contact.region
+%p
+  %b Company:
+  = @contact.company
+%p
+  %b User:
+  = @contact.user
+
+= link_to 'Edit', edit_contact_path(@contact)
+\|
+= link_to 'Back', contacts_path

@@ -1,0 +1,39 @@
+%p#notice= notice
+
+%p
+  %b Iso:
+  = @country.iso
+%p
+  %b Iso3:
+  = @country.iso3
+%p
+  %b Fips:
+  = @country.fips
+%p
+  %b Country:
+  = @country.country
+%p
+  %b Continent:
+  = @country.continent
+%p
+  %b Currency code:
+  = @country.currency_code
+%p
+  %b Currency name:
+  = @country.currency_name
+%p
+  %b Phone prefix:
+  = @country.phone_prefix
+%p
+  %b Postal code:
+  = @country.postal_code
+%p
+  %b Language:
+  = @country.language
+%p
+  %b Geonameid:
+  = @country.geonameid
+
+= link_to 'Edit', edit_country_path(@country)
+\|
+= link_to 'Back', countries_path

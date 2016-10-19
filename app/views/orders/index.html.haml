@@ -1,0 +1,33 @@
+%h1 Listing orders
+
+%table
+  %thead
+    %tr
+      %th Company
+      %th Bill to contact
+      %th Ship to contact
+      %th Order fee
+      %th Total amount
+      %th Purchased at
+      %th Transport method
+      %th
+      %th
+      %th
+
+  %tbody
+    - @orders.each do |order|
+      %tr
+        %td= order.company
+        %td= order.bill_to_contact_id
+        %td= order.ship_to_contact_id
+        %td= order.order_fee_id
+        %td= order.total_amount
+        %td= order.purchased_at
+        %td= order.transport_method
+        %td= link_to 'Show', order
+        %td= link_to 'Edit', edit_order_path(order)
+        %td= link_to 'Destroy', order, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Order', new_order_path

@@ -1,0 +1,2 @@
+json.extract! country, :id, :iso, :iso3, :fips, :country, :continent, :currency_code, :currency_name, :phone_prefix, :postal_code, :language, :geonameid, :created_at, :updated_at
+json.url country_url(country, format: :json)

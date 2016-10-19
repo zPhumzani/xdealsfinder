@@ -1,0 +1,2 @@
+json.extract! order, :id, :company_id, :bill_to_contact_id, :ship_to_contact_id, :order_fee_id, :total_amount, :purchased_at, :transport_method, :created_at, :updated_at
+json.url order_url(order, format: :json)

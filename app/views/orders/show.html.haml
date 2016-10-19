@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Company:
+  = @order.company
+%p
+  %b Bill to contact:
+  = @order.bill_to_contact_id
+%p
+  %b Ship to contact:
+  = @order.ship_to_contact_id
+%p
+  %b Order fee:
+  = @order.order_fee_id
+%p
+  %b Total amount:
+  = @order.total_amount
+%p
+  %b Purchased at:
+  = @order.purchased_at
+%p
+  %b Transport method:
+  = @order.transport_method
+
+= link_to 'Edit', edit_order_path(@order)
+\|
+= link_to 'Back', orders_path
